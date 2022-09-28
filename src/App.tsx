@@ -2,7 +2,7 @@ import React, { FC, FormEvent } from "react";
 import { useState } from "react";
 import { RiAddLine } from "react-icons/ri";
 import "./App.css";
-// import TodoListItems from "./TodoListItems";
+import TodoListItems from "./TodoListItems";
 
 export interface Todos {
   id: number;
@@ -10,7 +10,7 @@ export interface Todos {
   isDone: boolean;
 }
 
-let index = 1;
+let index: number = 1;
 
 const App: FC = () => {
   const [values, setValues] = useState<string>("");
@@ -51,7 +51,7 @@ const App: FC = () => {
         </button>
       </form>
 
-      {/* <TodoListItems todo={todo} /> */}
+      <TodoListItems todo={todo} setTodo={setTodo} />
     </main>
   );
 };
