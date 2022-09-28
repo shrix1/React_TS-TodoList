@@ -51,7 +51,9 @@ const App: FC = () => {
         </button>
       </form>
 
-      <TodoListItems todo={todo} setTodo={setTodo} />
+      {todo.map((items, key) => (
+        <TodoListItems items={items} todo={todo} setTodo={setTodo} key={key} />
+      ))}
     </main>
   );
 };
