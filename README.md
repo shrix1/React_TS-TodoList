@@ -1,2 +1,2 @@
 ## ReactTS-TodoList
-   with Edit / delete / remove
+## with Edit / delete / remove functionality
