@@ -1,3 +1,10 @@
 body {
-  background-color: #181818;
+  background: rgb(89, 165, 230);
+  background: linear-gradient(
+    80deg,
+    rgba(89, 165, 230, 1) 50%,
+    rgb(219, 227, 230) 90%
+  );
+  width: 100%;
+  height: 100vh;
 }
