@@ -38,6 +38,7 @@ const TodoListItems: FC<Props> = ({ items, todo, setTodo }) => {
 
   useEffect(() => {
     //initially the ref is null so only chaining obj used
+    inputFocus.current?.focus();
   }, [edit]);
 
   return (
