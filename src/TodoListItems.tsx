@@ -1,5 +1,5 @@
 import React, { FC, useState, FormEvent, useRef, useEffect } from "react";
-import { Todos } from "./App"; //interface of todos (State)
+import { Todos } from "./App"; //typeCheck of todos
 import { FiTrash } from "react-icons/fi";
 import { MdDone } from "react-icons/md";
 import { BiEditAlt } from "react-icons/bi";
@@ -37,7 +37,7 @@ const TodoListItems: FC<Props> = ({ items, todo, setTodo }) => {
   };
 
   useEffect(() => {
-    inputFocus.current?.focus();
+    //initially the ref is null so only chaining obj used
   }, [edit]);
 
   return (

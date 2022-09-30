@@ -1,4 +1,4 @@
-import React, { FC, FormEvent } from "react";
+import { FC, FormEvent } from "react";
 import { useState } from "react";
 import { RiAddLine } from "react-icons/ri";
 import "./App.css";
