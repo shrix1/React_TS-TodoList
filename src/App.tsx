@@ -33,7 +33,7 @@ const App: FC = () => {
           className="border-b-4 border-transparent group-hover:border-black w-[280px]
           rounded-l-md h-[50px] outline-none pl-3 font-semibold text-xl bg-white 
           -mt-1 placeholder:text-slate-900 placeholder:font-thin placeholder:font-pop
-          placeholder:text-[15px] caret-sky-500 "
+          placeholder:text-[15px] caret-sky-500 transition-all duration-200"
           type="text"
           onChange={(e) => setValues(e.target.value)}
           value={values}
@@ -43,7 +43,7 @@ const App: FC = () => {
         <button
           className="border-b-4 group-hover:border-black group-hover:bg-sky-500
           group-hover:text-black text-white h-[50px] rounded-r-md bg-black 
-          border-transparent p-2 relative top-[4.5px]"
+          border-transparent p-2 relative top-[4.5px] transition-all duration-200"
         >
           <RiAddLine className="text-2xl" />
         </button>
